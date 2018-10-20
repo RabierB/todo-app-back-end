@@ -59,3 +59,40 @@ submitbutton {
 h4 {
     border: dotted;
 }
+
+.backbutton {
+    color: grey;
+}
+
+h4 {
+    border: solid;
+    border-radius: 20px;
+    text-align: center;
+    border-color: coral;
+    margin-right: 375;
+
+}
+ 
+ h1 {
+     text-align: center;
+     text-decoration: underline
+     
+     
+ }
+ 
+li {
+    font-family: cursive
+}
+
+body {
+    color: darkcyan;
+    background-color: burlywood
+}
+
+.todos {
+    text-decoration: line-through;
+}
+
+.indexline {
+    text-decoration: line-through;
+}
