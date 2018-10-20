@@ -53,4 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get "add/:x/:y" => "application#add"
+
+get "todo/index", to: "todo#index"
 end
