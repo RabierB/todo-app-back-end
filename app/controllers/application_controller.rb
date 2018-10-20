@@ -6,4 +6,5 @@ def add
  @answer = params[:x].to_i + params[:y].to_i
 end
 end
-
+class TodoController < ApplicationController
+end
