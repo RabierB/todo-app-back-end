@@ -4,7 +4,7 @@
  <h1>My To-Do List</h1>
  <input placeholder="Name of Item"/>  <input type="number" placeholder= "Number"/><input type="Submit" value="Add New" class="Submitbutton"/>
 <% @todos.each do |todo| %>
-    <li><input type="checkbox" checked="checked"/><a href="show/<%= todo.id %>"><%= todo.description%></a><span class="pomodorosestimate"> 4 pomodoros </span> </li>
+    <li><input type="checkbox" checked="checked"/><a href="/todo/show/<%= todo.id %>"><%= todo.description%></a><span class="pomodorosestimate"> 4 pomodoros </span> </li>
     <%end%>
     <li><input type="checkbox"/>Add todo</li>
     </ol>

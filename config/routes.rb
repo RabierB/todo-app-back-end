@@ -70,4 +70,6 @@ get 'todo/update/:id', to: 'todo#update'
 
 get 'todo/destroy/:id', to: 'todo#destroy'
 
+root to: 'todo#index'
+
 end
