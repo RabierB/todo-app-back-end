@@ -5,7 +5,7 @@
  <input placeholder="Name of Item"/>  <input type="number" placeholder= "Number"/><input type="Submit" value="Add New" class="Submitbutton"/>
 <% @todos.each do |todo| %>
     <li><input type="checkbox" checked="checked"/><a href="show/<%= todo.id %>"><%= todo.description%></a><span class="pomodorosestimate"> 4 pomodoros </span> </li>
-    <% end%>
+    <%end%>
     <li><input type="checkbox"/>Add todo</li>
     </ol>
     <img 
