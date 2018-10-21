@@ -1,8 +1,8 @@
   <h1>My To-Do List</h1>
   
-<h3>Todo #<%= params[:id] %></h3>
-      <input type="checkbox"/> <h2><%= @title %></h2>
-  <h4><%= @size%> Pomodoros</h4>
+<h3>Todo #<%= @todo.id %></h3>
+      <input type="checkbox"/> <h2><%= @todo.description %></h2>
+  <h4><%= @todo.pomodoro_estimate%> Pomodoros</h4>
   <a>Edit</a>   <a>Delete</a>   <a href="/todo/index" class="backbutton">Go Back</a> 
   
   
