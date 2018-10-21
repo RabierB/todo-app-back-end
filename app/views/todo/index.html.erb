@@ -3,14 +3,9 @@
   <ol>
  <h1>My To-Do List</h1>
  <input placeholder="Name of Item"/>  <input type="number" placeholder= "Number"/><input type="Submit" value="Add New" class="Submitbutton"/>
-
-    <li><input type="checkbox" checked="checked"/><a href="show/1">Make the Curriculum</a><span class="pomodorosestimate"> 4 pomodoros </span> </li>
-    <li><input type="checkbox"/><a href="show/2">Buy workshop supplies</a><span class="pomodorosestimate">3 pomodoros> </li>
-    <li><input type="checkbox"/><a href="show/3">Meet with volunter trainers</a> <span class="pomodorosestimate"3 pomodoros></li>
-    <li><input type="checkbox"/><a href="show/4">Order food for Saturday and Sunday</a> <span class="pomodorosestimate"><class="pomodorosestimate">1 pomodoros></span></li>
-    <li><input type="checkbox"/><a href="show/5">Check pre-work assignments</a><span class="pomodorosestimate">2 pomodoros</span></li>
-    <li><input type="checkbox"/><a href="show/6">Send workshop location to all the students </a><span class="pomodorosestimate">1 pomodoros</span></li>
-    <li><input type="checkbox"/><a href="show/7">Have a great workshop </a><span class="pomodorosestimate">0 pomodoros</span></li>
+<% @todos.each do |todo| %>
+    <li><input type="checkbox" checked="checked"/><a href="show/<%= todo.id %>"><%= todo.description%></a><span class="pomodorosestimate"> 4 pomodoros </span> </li>
+    <% end%>
     <li><input type="checkbox"/>Add todo</li>
     </ol>
     <img 
